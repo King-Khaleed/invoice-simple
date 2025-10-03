@@ -1,8 +1,12 @@
-import { Header } from "@/components/landing/header";
-import { Hero } from "@/components/landing/hero";
-import { Benefits } from "@/components/landing/benefits";
-import { Cta } from "@/components/landing/cta";
-import { Footer } from "@/components/landing/footer";
+import { Header } from "@/components/leadflow/header";
+import { Hero } from "@/components/leadflow/hero";
+import { PainPoints } from "@/components/leadflow/pain-points";
+import { Solution } from "@/components/leadflow/solution";
+import { HowItWorks } from "@/components/leadflow/how-it-works";
+import { Pricing } from "@/components/leadflow/pricing";
+import { SocialProof } from "@/components/leadflow/social-proof";
+import { Faq } from "@/components/leadflow/faq";
+import { Footer } from "@/components/leadflow/footer";
 
 export default function Home() {
   return (
@@ -10,8 +14,12 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Benefits />
-        <Cta />
+        <PainPoints />
+        <Solution />
+        <HowItWorks />
+        <Pricing />
+        <SocialProof />
+        <Faq />
       </main>
       <Footer />
     </div>

@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Verdant Launchpad',
-  description: 'Launch Your Digital Future with Verdant Launchpad',
+  title: 'LeadFlow - Real Estate Lead Follow-up Automation',
+  description: 'Stop losing deals to missed follow-ups. Automated lead tracking for busy real estate agents.',
 };
 
 export default function RootLayout({
@@ -17,9 +17,9 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased">
+      <body className="font-sans antialiased">
         {children}
         <Toaster />
       </body>

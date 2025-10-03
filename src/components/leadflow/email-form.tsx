@@ -36,14 +36,15 @@ export function EmailForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
+    // Here you would typically send the email to your backend, e.g., Supabase
+    console.log("Email for waitlist:", values.email);
+    
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
     
-    console.log("Email submitted:", values.email);
-    
     toast({
-      title: "Subscription successful!",
-      description: "Thanks for your interest. We'll be in touch soon.",
+      title: "You're on the list!",
+      description: "Thanks for your interest. We'll be in touch with updates.",
     });
 
     form.reset();
@@ -52,7 +53,7 @@ export function EmailForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full max-w-sm">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full">
         <FormField
           control={form.control}
           name="email"
@@ -63,16 +64,16 @@ export function EmailForm() {
                   <Input 
                     placeholder="Enter your email" 
                     {...field}
-                    className="h-12 text-base bg-white/10 text-white placeholder:text-white/70 border-white/20 focus-visible:ring-white"
+                    className="h-12 text-base"
                     disabled={isSubmitting}
                   />
                 </FormControl>
-                <Button type="submit" size="lg" className="h-12 bg-white text-primary hover:bg-white/90" disabled={isSubmitting}>
-                  <span>{isSubmitting ? 'Submitting...' : 'Sign Up'}</span>
+                <Button type="submit" size="lg" className="h-12" disabled={isSubmitting}>
+                  <span>{isSubmitting ? 'Joining...' : 'Join'}</span>
                   {!isSubmitting && <ArrowRight className="ml-2 h-4 w-4" />}
                 </Button>
               </div>
-              <FormMessage className="text-left text-white/90" />
+              <FormMessage />
             </FormItem>
           )}
         />
