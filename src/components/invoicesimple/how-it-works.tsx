@@ -2,22 +2,22 @@ const steps = [
   {
     step: 1,
     title: "Sign up in 30 seconds",
-    description: "No credit card required to start your free trial.",
+    description: "No credit card required to start your free 14-day trial.",
   },
   {
     step: 2,
     title: "Create your first invoice",
-    description: "Use our simple form to create a professional invoice in 60 seconds.",
+    description: "Use our simple form to create a professional invoice in under 60 seconds.",
   },
   {
     step: 3,
     title: "Send to your client",
-    description: "Email the invoice or send a shareable link with one click.",
+    description: "Email the invoice or send a shareable link with just one click.",
   },
   {
     step: 4,
     title: "Get paid",
-    description: "Track everything in one place and accept online payments.",
+    description: "Track everything in one place and accept online payments easily.",
   },
 ];
 

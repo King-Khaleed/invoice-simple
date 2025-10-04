@@ -1,9 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Send, CreditCard } from "lucide-react";
+import { CircleCheckBig, Send, CreditCard } from "lucide-react";
 
 const benefits = [
   {
-    icon: <CheckCircle className="h-8 w-8 text-green-500" />,
+    icon: <CircleCheckBig className="h-8 w-8 text-green-500" />,
     title: "Create Invoices in 60s",
     description: "Use a simple form with auto-calculations and professional templates.",
   },

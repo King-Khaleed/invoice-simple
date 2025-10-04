@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BadgeDollarSign, Clock, Annoyed } from "lucide-react";
+import { BadgeDollarSign, Clock, FileX } from "lucide-react";
 
 const painPoints = [
   {
@@ -13,7 +13,7 @@ const painPoints = [
     description: "Wasting hours on clunky software when you should be working on billable tasks.",
   },
   {
-    icon: <Annoyed className="h-8 w-8 text-destructive" />,
+    icon: <FileX className="h-8 w-8 text-destructive" />,
     title: "Chasing Payments",
     description: "Feeling frustrated chasing clients for late payments without a proper system in place.",
   },
