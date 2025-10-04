@@ -4,6 +4,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+
 
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { ArrowRight } from "lucide-react";
+import { supabase } from "@/lib/supabase";
 
 const formSchema = z.object({
   email: z.string().email({
@@ -26,6 +29,7 @@ const formSchema = z.object({
 export function EmailForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -36,19 +40,36 @@ export function EmailForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Here you would typically send the email to your backend, e.g., Supabase
-    console.log("Email for waitlist:", values.email);
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "You're on the list!",
-      description: "Thanks for your interest. We'll be in touch with updates on the free trial.",
-    });
+    try {
+      const { error } = await supabase
+        .from('waitlist_emails')
+        .insert({ email: values.email });
 
-    form.reset();
-    setIsSubmitting(false);
+      if (error) {
+        if (error.code === '23505') { // Unique constraint violation
+          toast({
+            variant: "destructive",
+            title: "Already on the list!",
+            description: "This email address has already been registered.",
+          });
+        } else {
+          throw error;
+        }
+      } else {
+        router.push('/success');
+      }
+    } catch (error) {
+      console.error('Error submitting to Supabase:', error);
+      toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem with your request. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+      form.reset();
+    }
   }
 
   return (
