@@ -24,7 +24,7 @@ export function PainPoints() {
     <section className="py-16 sm:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             Tired of Overpaying for Invoicing?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">

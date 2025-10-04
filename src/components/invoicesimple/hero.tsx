@@ -6,13 +6,13 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-invoice');
 
   return (
-    <section id="waitlist" className="py-20 md:py-32 bg-white">
+    <section id="waitlist" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground leading-tight">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground leading-tight">
             Professional Invoicing for Freelancers - $9/month
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg md:text-xl text-muted-foreground">
             Create and send invoices in 60 seconds. Get paid faster without the complexity of expensive software.
           </p>
           <div className="mt-8 max-w-md mx-auto md:mx-0">

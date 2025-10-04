@@ -20,7 +20,7 @@ export function SocialProof() {
     <section className="py-16 sm:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             The Math is Simple
           </h2>
         </div>
@@ -28,7 +28,7 @@ export function SocialProof() {
           {stats.map((stat, index) => (
             <Card key={index} className="text-center bg-card">
               <CardHeader>
-                <CardTitle className="text-4xl font-extrabold text-primary">
+                <CardTitle className="text-3xl md:text-4xl font-extrabold text-primary">
                   {stat.value}
                 </CardTitle>
               </CardHeader>

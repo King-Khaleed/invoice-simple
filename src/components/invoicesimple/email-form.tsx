@@ -80,16 +80,16 @@ export function EmailForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <div className="flex space-x-2">
+              <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
                 <FormControl>
                   <Input 
                     placeholder="Enter your email" 
                     {...field}
-                    className="h-12 text-base"
+                    className="h-12 text-base w-full"
                     disabled={isSubmitting}
                   />
                 </FormControl>
-                <Button type="submit" size="lg" className="h-12" disabled={isSubmitting}>
+                <Button type="submit" size="lg" className="h-12 w-full sm:w-auto" disabled={isSubmitting}>
                   <span>{isSubmitting ? 'Joining...' : 'Start Free Trial'}</span>
                   {!isSubmitting && <ArrowRight className="ml-2 h-4 w-4" />}
                 </Button>
