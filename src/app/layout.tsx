@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'LeadFlow - Real Estate Lead Follow-up Automation',
-  description: 'Stop losing deals to missed follow-ups. Automated lead tracking for busy real estate agents.',
+  title: 'InvoiceSimple - Professional Invoicing for Freelancers',
+  description: 'Create and send invoices in 60 seconds. Get paid faster without the complexity of expensive software.',
 };
 
 export default function RootLayout({

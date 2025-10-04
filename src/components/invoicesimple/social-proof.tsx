@@ -2,19 +2,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const stats = [
   {
-    value: "35-50%",
-    label: "of sales go to the first agent to respond.",
-    source: "Source: Harvard Business Review",
+    value: "Save $120+/year",
+    label: "vs FreshBooks ($19/mo vs $9/mo)",
   },
   {
-    value: "$2k - $5k",
-    label: "average commission per real estate deal.",
-    source: " ",
+    value: "Get Paid 2x Faster",
+    label: "with integrated online payments.",
   },
   {
-    value: "1 Deal",
-    label: "from one follow-up pays for months of software.",
-    source: " ",
+    value: "One Less Subscription",
+    label: "draining your monthly freelance budget.",
   },
 ];
 
@@ -24,7 +21,7 @@ export function SocialProof() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            The High Cost of Missing Follow-ups
+            The Math is Simple
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -37,7 +34,6 @@ export function SocialProof() {
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-foreground">{stat.label}</p>
-                <p className="text-sm text-muted-foreground mt-2">{stat.source}</p>
               </CardContent>
             </Card>
           ))}

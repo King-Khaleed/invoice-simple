@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Zap } from "lucide-react";
+import { Menu, ReceiptText } from "lucide-react";
 
 const navLinks = [
   { href: "#features", label: "Features" },
@@ -14,8 +14,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-          <Zap className="h-6 w-6 text-primary" />
-          LeadFlow
+          <ReceiptText className="h-6 w-6 text-primary" />
+          InvoiceSimple
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -32,7 +32,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
            <Button asChild className="hidden md:flex">
-            <Link href="#waitlist">Join Waitlist</Link>
+            <Link href="#waitlist">Start Free Trial</Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -45,8 +45,8 @@ export function Header() {
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between border-b pb-4">
                   <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-                    <Zap className="h-6 w-6 text-primary" />
-                    LeadFlow
+                    <ReceiptText className="h-6 w-6 text-primary" />
+                    InvoiceSimple
                   </Link>
                 </div>
                 <nav className="flex flex-col gap-4 mt-8">
@@ -62,7 +62,7 @@ export function Header() {
                 </nav>
                  <div className="mt-auto">
                   <Button asChild className="w-full">
-                    <Link href="#waitlist">Join Waitlist</Link>
+                    <Link href="#waitlist">Start Free Trial</Link>
                   </Button>
                 </div>
               </div>

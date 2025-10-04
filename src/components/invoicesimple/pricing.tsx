@@ -9,19 +9,19 @@ export function Pricing() {
         <div className="flex justify-center">
             <Card className="w-full max-w-md text-center shadow-2xl border-2 border-primary">
               <CardHeader className="pb-4">
-                <CardTitle className="text-3xl font-bold">$79/month</CardTitle>
-                <CardDescription className="pt-2 text-base text-green-600 font-semibold">
-                  First 10 agents: Lifetime 50% discount ($39/month)
+                <CardTitle className="text-3xl font-bold">$9/month</CardTitle>
+                <CardDescription className="pt-2 text-base text-muted-foreground">
+                  Unlimited invoices, unlimited clients.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  No setup fees, cancel anytime. All features included.
+                  No hidden fees, cancel anytime.
                 </p>
               </CardContent>
               <CardFooter>
                 <Button asChild size="lg" className="w-full">
-                  <Link href="#waitlist">Reserve Your Spot</Link>
+                  <Link href="#waitlist">Start Free Trial</Link>
                 </Button>
               </CardFooter>
             </Card>

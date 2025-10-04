@@ -1,23 +1,23 @@
 const steps = [
   {
     step: 1,
-    title: "Add a lead",
-    description: "Enter a new lead's contact info from your phone or desktop in under 30 seconds.",
+    title: "Sign up in 30 seconds",
+    description: "No credit card required to start your free trial.",
   },
   {
     step: 2,
-    title: "Automation kicks in",
-    description: "We automatically send your pre-written follow-up emails at the perfect times.",
+    title: "Create your first invoice",
+    description: "Use our simple form to create a professional invoice in 60 seconds.",
   },
   {
     step: 3,
-    title: "Get smart reminders",
-    description: "Receive an SMS alert when a lead is ready for a personal call from you.",
+    title: "Send to your client",
+    description: "Email the invoice or send a shareable link with one click.",
   },
   {
     step: 4,
-    title: "Close more deals",
-    description: "Focus on building relationships and closing deals, not on managing spreadsheets.",
+    title: "Get paid",
+    description: "Track everything in one place and accept online payments.",
   },
 ];
 
@@ -30,7 +30,7 @@ export function HowItWorks() {
             How It Works
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Four simple steps to automated follow-ups and more closed deals.
+            Four simple steps to faster payments and less stress.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">

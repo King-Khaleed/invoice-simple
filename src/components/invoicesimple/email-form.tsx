@@ -44,7 +44,7 @@ export function EmailForm() {
     
     toast({
       title: "You're on the list!",
-      description: "Thanks for your interest. We'll be in touch with updates.",
+      description: "Thanks for your interest. We'll be in touch with updates on the free trial.",
     });
 
     form.reset();
@@ -69,7 +69,7 @@ export function EmailForm() {
                   />
                 </FormControl>
                 <Button type="submit" size="lg" className="h-12" disabled={isSubmitting}>
-                  <span>{isSubmitting ? 'Joining...' : 'Join'}</span>
+                  <span>{isSubmitting ? 'Joining...' : 'Start Free Trial'}</span>
                   {!isSubmitting && <ArrowRight className="ml-2 h-4 w-4" />}
                 </Button>
               </div>

@@ -1,21 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Clock, AlertCircle } from "lucide-react";
+import { BadgeDollarSign, Clock, Annoyed } from "lucide-react";
 
 const painPoints = [
   {
-    icon: <FileText className="h-8 w-8 text-destructive" />,
-    title: "Scattered Leads",
-    description: "Leads are lost on napkins, phone notes, and sticky notes, with no central source of truth.",
+    icon: <BadgeDollarSign className="h-8 w-8 text-destructive" />,
+    title: "Paying for Bloat",
+    description: "Paying $20+/month for complex accounting features you don't even use.",
   },
   {
     icon: <Clock className="h-8 w-8 text-destructive" />,
-    title: "No Time to Follow-Up",
-    description: "You're too busy showing homes and closing deals to remember who to follow up with and when.",
+    title: "Wasting Time",
+    description: "Wasting hours on clunky software when you should be working on billable tasks.",
   },
   {
-    icon: <AlertCircle className="h-8 w-8 text-destructive" />,
-    title: "Losing to Competitors",
-    description: "Deals are going to competitors simply because you forgot to make that one crucial call back.",
+    icon: <Annoyed className="h-8 w-8 text-destructive" />,
+    title: "Chasing Payments",
+    description: "Feeling frustrated chasing clients for late payments without a proper system in place.",
   },
 ];
 
@@ -25,10 +25,10 @@ export function PainPoints() {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Sound Familiar?
+            Tired of Overpaying for Invoicing?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            You're a great agent, but you can't be everywhere at once.
+            Your invoicing tool should save you time and money, not add to your stress.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
