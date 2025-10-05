@@ -16,7 +16,7 @@ export default function SuccessPage() {
               Thank You! You&apos;re on the Waitlist
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              We&apos;ll email you when [Billful] launches. In the meantime, tell other freelancers about us!
+              We&apos;ll email you when Billful launches. In the meantime, tell other freelancers about us!
             </p>
             <div className="mt-8">
               <Button asChild size="lg">

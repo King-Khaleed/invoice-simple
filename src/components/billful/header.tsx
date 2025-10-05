@@ -15,7 +15,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
           <ReceiptText className="h-6 w-6 text-primary" />
-          [Billful]
+          Billful
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -46,7 +46,7 @@ export function Header() {
                 <div className="flex items-center justify-between border-b pb-4">
                   <Link href="/" className="flex items-center gap-2 font-bold text-lg">
                     <ReceiptText className="h-6 w-6 text-primary" />
-                    [Billful]
+                    Billful
                   </Link>
                 </div>
                 <nav className="flex flex-col gap-4 mt-8">

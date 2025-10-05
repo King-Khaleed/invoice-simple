@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "Is there a free trial?",
-    answer: "Yes, you can try [Billful] free for 14 days. No credit card required.",
+    answer: "Yes, you can try Billful free for 14 days. No credit card required.",
   },
   {
     question: "Can I customize my invoices?",

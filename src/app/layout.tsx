@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: '[Billful] - Professional Invoicing for Freelancers',
+  title: 'Billful - Professional Invoicing for Freelancers',
   description: 'Create and send invoices in 60 seconds. Get paid faster without the complexity of expensive software.',
 };
 

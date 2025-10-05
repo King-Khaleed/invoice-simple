@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <ReceiptText className="h-5 w-5 text-primary" />
-            <span className="font-bold">[Billful]</span>
+            <span className="font-bold">Billful</span>
           </div>
           <p className="text-sm text-center text-muted-foreground">
             Made for freelancers, by freelancers.
@@ -21,7 +21,7 @@ export function Footer() {
           </div>
         </div>
          <p className="text-center text-xs text-muted-foreground mt-6">
-            © {new Date().getFullYear()} [Billful]. All rights reserved.
+            © {new Date().getFullYear()} Billful. All rights reserved.
           </p>
       </div>
     </footer>
