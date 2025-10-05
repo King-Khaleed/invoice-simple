@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Header } from "@/components/invoicesimple/header";
-import { Footer } from "@/components/invoicesimple/footer";
+import { Header } from "@/components/billful/header";
+import { Footer } from "@/components/billful/footer";
 import { CheckCircle } from "lucide-react";
 
 export default function SuccessPage() {
@@ -16,7 +16,7 @@ export default function SuccessPage() {
               Thank You! You&apos;re on the Waitlist
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              We&apos;ll email you when InvoiceSimple launches. In the meantime, tell other freelancers about us!
+              We&apos;ll email you when [Billful] launches. In the meantime, tell other freelancers about us!
             </p>
             <div className="mt-8">
               <Button asChild size="lg">

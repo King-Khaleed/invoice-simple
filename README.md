@@ -1,6 +1,6 @@
-# InvoiceSimple
+# [Billful]
 
-This is a Next.js landing page for **InvoiceSimple**, a professional invoicing software for freelancers.
+This is a Next.js landing page for **[Billful]**, a professional invoicing software for freelancers.
 
 ## ✨ Features
 
